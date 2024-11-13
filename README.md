@@ -13,3 +13,19 @@
 **Tech Stack:** React, Styled-Components, Storybook, Jest, ESLint, Prettier, Vite.
 
 **Future Work:** Additional planned components or features will be added as the project moves forward.
+
+## Setup & Development Environment
+
+1. Clone the repository:
+   ```bash
+   git clone [<repo-url>](https://github.com/atenajoon/mini-features.git)
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. To start the development server:
+   ```bash
+   npm run dev
+    
+
