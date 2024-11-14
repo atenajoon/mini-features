@@ -1,12 +1,14 @@
 import GlobalStyles from './styles/GlobalStyles';
+import Button from './ui/Button/Button';
 
 function App() {
   return (
-    <GlobalStyles>
-      <>
-        <p>Hi mini features!</p>
-      </>
-    </GlobalStyles>
+    <>
+      <GlobalStyles />
+      <Button variant="primary" onClick={() => console.log('clicked')}>
+        Click me!
+      </Button>
+    </>
   );
 }
 
