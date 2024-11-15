@@ -9,15 +9,24 @@ export const stories = [
 ];
 export const addons = [
   '@storybook/addon-essentials',
-  '@storybook/addon-links',
-  '@storybook/addon-interactions',
   '@chromatic-com/storybook',
 ];
 export const docs = {
   autodocs: true,
 };
-export const typescript = {
-  reactDocgen: 'react-docgen-typescript',
+
+// Add this part to customize Vite config
+export const viteFinal = (config) => {
+  // Example: Add a custom alias
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    '@ui': '/src/ui',
+    '@styles': '/src/styles',
+  };
+
+  // Example: Add a plugin
+  // config.plugins.push(yourCustomPlugin());
+  return config;
 };
 
 // module.exports = {
@@ -32,16 +41,10 @@ export const typescript = {
 //   ],
 //   addons: [
 //     '@storybook/addon-essentials',
-//     '@storybook/addon-links',
-//     '@storybook/addon-interactions',
 //     '@chromatic-com/storybook',
 //   ],
 
 //   docs: {
 //     autodocs: true,
-//   },
-
-//   typescript: {
-//     reactDocgen: 'react-docgen-typescript',
 //   },
 // };
