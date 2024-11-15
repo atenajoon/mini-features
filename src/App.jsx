@@ -1,6 +1,7 @@
 import GlobalStyles from './styles/GlobalStyles';
 import Button from './ui/Button/Button';
 import ButtonGroup from './ui/ButtonGroup/ButtonGroup';
+import Checkbox from './ui/Checkbox/Checkbox';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           Cancel
         </Button>
       </ButtonGroup>
+      <Checkbox>I am not a robot</Checkbox>
     </>
   );
 }
